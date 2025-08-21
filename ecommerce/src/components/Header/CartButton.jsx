@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 function CartButton({ cartCount ,MdShoppingCart}) {
+    const cartCount = useSelector((state) => state.Cart.totalQuantity );
+
 
   return (
     <NavLink to="/cart" className="relative">

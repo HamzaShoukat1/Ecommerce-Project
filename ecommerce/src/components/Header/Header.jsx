@@ -25,7 +25,6 @@ function Header() {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false);
         const closeMenu = () => setMenuOpen(false);
-  const cartCount = useSelector((state) => state.Cart?.totalQuantity || 0);
   // const toggleMenu = () => setMenuOpen(!menuOpen)  
   const toggleMenu = () => setMenuOpen((prev)=> !prev);
 
@@ -59,7 +58,7 @@ function Header() {
 
           {/* Cart Icon for Desktop */}
          <div className="flex gap-1 ">
-           <CartButton cartCount={cartCount} MdShoppingCart={MdShoppingCart} /> 
+           <CartButton  MdShoppingCart={MdShoppingCart} /> 
           <NavLink to='/cart'>
           <h1 className="cursor-pointer
            text-base">Cart</h1>
