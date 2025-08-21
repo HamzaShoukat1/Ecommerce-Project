@@ -70,7 +70,6 @@ function Header() {
         {/* Cart and hamburger  Button for mobile*/}
        <div className="md:hidden flex items-center space-x-2">
 
-         <CartButton cartCount={cartCount} MdShoppingCart={MdShoppingCart} />
 
                        
         <Hamburger toggleMenu={toggleMenu} GiHamburgerMenu={GiHamburgerMenu} />
