@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/postcss": "^4.1.12",
     "axios": "^1.10.0",
     "plugin-react": "^0.0.1-security",
+    "postcss": "^8.5.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.61.1",
@@ -24,6 +26,7 @@
     "reselect": "^5.1.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.10",
+    "tailwindcss": "^4.1.12",
     "vite": "^7.0.0"
   },
   "devDependencies": {
