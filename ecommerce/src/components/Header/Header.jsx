@@ -25,7 +25,7 @@ function Header() {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false);
         const closeMenu = () => setMenuOpen(false);
-  const cartCount = useSelector((state) => state.Cart.totalQuantity);
+  const cartCount = useSelector((state) => state.Cart?.totalQuantity || 0);
   // const toggleMenu = () => setMenuOpen(!menuOpen)  
   const toggleMenu = () => setMenuOpen((prev)=> !prev);
 
