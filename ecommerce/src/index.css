@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+
+
+
+
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+ 
+  /* For WebKit (Chrome & Safari). */
+  ::-webkit-scrollbar {
+      display: smooth;
+  }
+
+
+  }
+
+@layer utilities {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .ipad\:flex-col {
+      flex-direction: column !important;
+    }
+  }
+  .ipad\:w-full{
+    width: 100%;
+  }
+   .ipad\:items-center {
+      align-items: center !important;
+    }
+   
+}
+
+
