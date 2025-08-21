@@ -10,7 +10,6 @@ import toast from "react-hot-toast";
 
 
 const Productdetails = ()=>{
-  const cartTotalQuantity = useSelector((state) => state.Cart.totalQuantity);
 
 
     const [isbouncing, setisbouncing] = useState(true)
