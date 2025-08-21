@@ -3,7 +3,6 @@ import { useSelector,useDispatch } from "react-redux";
 import { getProductDetails,clearProductDetails } from "../../Store/ProductDetails/ProductDetailsSlice";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../../Store/CartSlice/CartSlice";
-import ProductSkeleton from "../HomeProductSkeleton";
 import toast from "react-hot-toast";
 
 
