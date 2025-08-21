@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-function CartButton({ cartCount ,MdShoppingCart}) {
+function CartButton({  MdShoppingCart}) {
 
   return (
     <NavLink to="/cart" className="relative">
