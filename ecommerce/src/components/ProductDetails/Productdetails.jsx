@@ -74,7 +74,6 @@ if(status === 'succeeded') return (
         />
         <div className=" mb-4 md:mt-5">
          <button 
-           disabled={cartTotalQuantity >= 10} 
           onClick={handleAddtoCart }
           
           className={`cursor-pointer ${isbouncing ? "animate-bounce" : ""}  bg-gradient-to-r bg-red-500 text-white text-center  px-4 py-2 md:px-20 md:py-4 rounded-md transition duration-200 `}
