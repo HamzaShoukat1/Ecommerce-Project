@@ -1,6 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
+const initialState = {
+  cartItems: [],
+  totalAmount: 0,
+  totalQuantity: 0,
+};
 const  calculateTotals = (state)=>{ 
       let amount = 0
       let qty = 0
@@ -13,21 +17,13 @@ const  calculateTotals = (state)=>{
     
     };
 
-const initialState = {
-  cartItems: [],
-  totalAmount: 0,
-  totalQuantity: 0,
-};
+
 
 const CartSlice = createSlice({
   name: 'Cart',
   initialState,
   reducers:{
     addToCart: (state,action)=> {
-      if(!state){
-        return 
-
-      }
        const item = action.payload
         const existingData = state.cartItems.find((i)=> i.id === item.id)
         if(existingData){
