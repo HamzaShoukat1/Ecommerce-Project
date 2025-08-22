@@ -1,12 +1,16 @@
 export const loadState = ()=>{
   try {
     const serializedState = JSON.parse(localStorage.getItem('Cart'))
+    if(!serializedState)
+    {
+      return undefined
+
+    }
   
-    return serializedState
     
   } catch (err) {
     console.warn('failer', err);
-    // return undefined
+    return undefined
     
   }
 };
