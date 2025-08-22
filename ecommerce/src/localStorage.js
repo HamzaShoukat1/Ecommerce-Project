@@ -6,7 +6,7 @@ export const loadState = ()=>{
       return undefined
 
     }
-  
+  return JSON.parse(serializedState)
     
   } catch (err) {
     console.warn('failer', err);
@@ -24,6 +24,7 @@ export const saveState = (state)=>{
     
   } catch (err) {
     console.warn('failed', err)
+    return undefined
     
   }
 
