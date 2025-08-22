@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 function CartButton({ MdShoppingCart}) {
-    const cartCount = useSelector((state) => state.Cart.totalQuantity );
+    const cartCount = useSelector((state) => state.Cart?.totalQuantity );
 
 
   return (
