@@ -1,6 +1,6 @@
 export const loadState = ()=>{
   try {
-    const serializedState = JSON.parse(localStorage.getItem('Cart'))
+    const serializedState = localStorage.getItem('Cart')
     if(!serializedState)
     {
       return undefined
@@ -16,11 +16,11 @@ export const loadState = ()=>{
 };
 
 
-export const saveState = (state)=>{
+export const saveState = ()=>{
   try {
 
 
-    localStorage.setItem('Cart', JSON.stringify(state)) //Browsers only store strings in localStorage.
+    localStorage.setItem('Cart', JSON.stringify()) //Browsers only store strings in localStorage.
     
   } catch (err) {
     console.warn('failed', err)
