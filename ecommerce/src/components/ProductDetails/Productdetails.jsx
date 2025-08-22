@@ -47,6 +47,7 @@ const Productdetails = ()=>{
 const handleAddtoCart = ()=>{
   
   
+  
   dispatch(addToCart(product)) //product has data
   toast.success('Product added to cart',{
     id:product.id, //avoid duplicate toasts on rapid clicks
